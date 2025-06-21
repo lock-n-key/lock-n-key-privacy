@@ -6,11 +6,13 @@
 		<title>Delete Account - Phantom Vault</title>
 		<style>
 			:root {
-				--primary: #5c3df6;
-				--primary-dark: #412fc4;
-				--background: #f7f7f7;
+				--primary: #8257e6;
+				--primary-dark: #6b46c1;
+				--background: #f9f4e8;
 				--text: #333;
-				--accent: #805df8;
+				--accent: #9b74ea;
+				--ghost-white: #f5f1e6;
+				--container-bg: #ffffff;
 			}
 
 			body {
@@ -23,28 +25,35 @@
 
 			nav {
 				background: var(--primary);
-				color: #fff;
+				color: var(--ghost-white);
 				padding: 1rem 2rem;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				box-shadow: 0 2px 8px rgba(107, 70, 193, 0.3);
 			}
 
 			nav a {
-				color: #fff;
+				color: var(--ghost-white);
 				text-decoration: none;
 				margin-left: 1.5rem;
 				font-weight: bold;
+				transition: opacity 0.2s ease;
+			}
+
+			nav a:hover {
+				opacity: 0.85;
 			}
 
 			.container {
 				max-width: 900px;
 				margin: auto;
 				padding: 2rem;
-				background: #fff;
-				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+				background: var(--container-bg);
+				box-shadow: 0 2px 10px rgba(107, 70, 193, 0.1);
 				border-radius: 10px;
 				margin-top: 2rem;
+				border: 1px solid rgba(155, 116, 234, 0.2);
 			}
 
 			header {
@@ -66,7 +75,7 @@
 				margin-top: 4rem;
 				padding: 1rem;
 				font-size: 0.9rem;
-				color: #777;
+				color: var(--primary-dark);
 			}
 
 			@media (max-width: 600px) {
